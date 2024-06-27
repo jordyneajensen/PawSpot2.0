@@ -1,2 +1,6 @@
 class ApplicationController < ActionController::Base
-end
+    def handle_404
+      head :not_found
+    end
+  end
+  
